@@ -15,9 +15,10 @@ container.on('sendable', function (context) {
             context.sender.send({body:'Hello World!'});
         }
         setTimeout(send, 10000);
-        console.log('Message send');
     }
     send();
+    console.log('Message send');
+
 });
 
 container.on('disconnected', function (context) {
